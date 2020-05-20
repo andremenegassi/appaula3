@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import AppContainer from '../AppContainer';
 
 export default class Tela2 extends React.Component
 {
@@ -12,9 +13,9 @@ export default class Tela2 extends React.Component
     render(){
 
         let saida = 
-            <View style={[estilos.fundo, {color:"white"}]}>
-                <Text style={estilos.texto}>Tela 1</Text>
-            </View>
+        <AppContainer>
+             <Text style={estilos.texto}>Tela 2</Text>
+        </AppContainer>
 
         return saida;
     }
@@ -30,7 +31,6 @@ const estilos = StyleSheet.create({
     },
     texto:
     {
-        color:"white"
-
+        color:"green"
     }
 });
